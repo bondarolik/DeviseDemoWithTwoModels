@@ -13,6 +13,7 @@
 
   <body>
     <div class="container">
+      <%= link_to 'Ver lugares', backoffice_places_path, class: "btn btn-sm btn-dark" if admin_signed_in? %>
       <%= yield %>
     </div>
   </body>
